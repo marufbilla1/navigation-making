@@ -1,20 +1,38 @@
 nav{
-   width: 800px;
+   width: 600px;
    height: 50px;
-   background-color: rgb(165, 139, 165);
    margin: auto;
-   
 }
 
-nav ul{
+nav > ul{
     display: flex;
+    position: absolute;
+    justify-content: center;
 }
 
 nav ul li{
     list-style: none;
+    padding: 5px 30px;
+}
+
+nav ul li:hover{
+    background-color: rgb(211, 178, 145);
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
+    font-size: x-large;
+}
+
+nav li .dropdown{
+    display: none;
+    margin-top: 5px;
+    padding-left: 0%;
+}
+
+nav li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: aquamarine;
 }
